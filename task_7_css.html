@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Task</title>
+    <style>
+        body {
+            background-color: rgb(157, 6, 82); 
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        form {
+            background-color: rgb(73, 2, 38); 
+            padding: 20px;
+            box-sizing: border-box;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        label {
+            text-align: right;
+            width: 120px;
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table tr {
+            margin: 50px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            width: 50%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .gender-checkboxes {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .gender-checkboxes label {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }          
+        
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: rgb(255, 0, 102); 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="Your name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Your email"></td>
+            </tr>
+            <tr>
+                <td><label for="pw">Password:</label></td>
+                <td><input type="password" id="pw" name="pw" required></td>
+            </tr>
+            <tr>
+                <td><label for="pn">Phone Number:</label></td>
+                <td><input type="text" id="pn" name="pn" required></td>
+            </tr>
+            <tr class="gender-row">
+                <td><label>Gender:</label></td>
+                <td>
+                    <label><input type="checkbox" name="gender" value="Male"> Male</label>
+                    <label><input type="checkbox" name="gender" value="Female"> Female</label>
+                    <label><input type="checkbox" name="gender" value="Other"> Other</label>
+                </td>
+            </tr>                      
+            <tr>
+                <td><label for="lan">Language:</label></td>
+                <td>
+                    <select name="lan" id="lan">
+                        <option value="selected" selected>Select language</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Kannada">Kannada</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Malayalam">Malayalam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip Code:</label></td>
+                <td><input type="text" id="zip" name="zip" required></td>
+            </tr>
+            <tr>
+                <td><label for="about">About:</label></td>
+                <td><textarea id="about" name="about" placeholder="Write about yourself"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Register"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
