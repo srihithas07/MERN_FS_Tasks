@@ -49,24 +49,29 @@
         }
 
         .gender-checkboxes {
-            width: 50%;
-            display: inline-block;
-            vertical-align: top;
+            display: flex; /* Use flexbox to align items in a row */
+            align-items: center; /* Vertically align items */
         }
 
         .gender-checkboxes label {
             display: flex;
             align-items: center;
             margin-right: 10px;
-        }          
-        
+        }
+
+        /* Updated button styles */
         input[type="submit"] {
             margin-top: 20px;
-            background-color: rgb(255, 0, 102); 
-            color: white;
-            padding: 10px 20px;
+            background-color: white; /* Change button background color to white */
+            color: black; /* Change button text color to black */
+            padding: 20px 0;
+            margin-left: -20%;
             border: none;
+            width: 100%; /* Make the button cover the entire width */
             cursor: pointer;
+            font-size: 24px; /* Increase font size for better visibility */
+            font-weight: bold; /* Make the font bold */
+            border-radius: 10px; /* Add rounded corners */
         }
 
     </style>
@@ -93,7 +98,7 @@
             </tr>
             <tr class="gender-row">
                 <td><label>Gender:</label></td>
-                <td>
+                <td class="gender-checkboxes">
                     <label><input type="checkbox" name="gender" value="Male"> Male</label>
                     <label><input type="checkbox" name="gender" value="Female"> Female</label>
                     <label><input type="checkbox" name="gender" value="Other"> Other</label>
