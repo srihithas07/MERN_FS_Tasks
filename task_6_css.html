@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        #container {
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #logo {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: auto;
+        }
+
+        p {
+            text-align: left;
+            margin-top: 8px;
+        }
+        p label {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #remember-me label {
+            font-size: 12px;
+        }
+
+        #remember-me {
+            text-align: left;
+            margin-top: 6px;
+        }
+        #login-button {
+            background-color: green;
+            color: white;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        #cancel-button {
+            background-color: red;
+            color: white;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: left;
+        }
+
+        #forgot-password {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        #forgot-password a {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="logo" src="CSS_TASK.jpg" alt="Logo" />
+        <p><label>Username</label></p>
+        <input type="text" id="username" placeholder="Enter Username" />
+        <p><label>Password</label></p>
+        <input type="password" id="pw" placeholder="Enter Password" />
+        <div id="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+        </div>
+        <button id="login-button">Login</button>
+        <button id="cancel-button">Cancel</button>
+        <div id="forgot-password">
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>

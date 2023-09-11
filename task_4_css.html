@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-4</title>
+    <style>
+        .navigation a{
+            position:absolute;
+            left: -80px;
+            transition: 0.2s;
+            padding: 15px;
+            width: 100px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+        .navigation a:hover{
+            left: 0;
+        }
+        #Home{
+            top: 80px;
+            background-color: rgb(7,109,7);
+        }
+        #Add_New{
+            top: 140px;
+            background-color: rgb(28,132,173);
+        }
+        #Saved_Projects {
+            top: 200px;
+            background-color: red;
+        }
+        #Learn_More{
+            top: 260px;
+            background-color: rgb(56, 55, 55);
+        }
+        .exp{
+            margin-left: 100px;
+            margin-top: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#" id="Home">Info</a>
+        <a href="#" id="Add_New">New</a>
+        <a href="#" id="Saved_Projects">Saved Projects</a>
+        <a href="#" id="Learn_More">Contact</a>
+    </div>
+    <div class="exp">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+</body>
+</html>

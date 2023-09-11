@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task-2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: medium;
+        }
+        .divison1{
+            float: left;
+            border-style: solid;
+            border-width: 2px;
+            margin-right: 400px;
+        }
+        .division2{
+            float: left;
+            border-style: solid;
+            border-width: 2px;
+            margin-top: 50px;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 0px;
+            margin: 5px;
+            background-color: skyblue;
+        }
+        #ul2{
+            list-style-type: none;
+            padding-left: 0px;
+            background-color: lightgray;
+            height: 25px;
+        }
+        li{
+            padding: 5px;
+        }
+        #li2{
+            display: inline;
+            font-size: large;
+            padding-top: 0px;
+            border-right: 2px solid blue;
+            
+        }
+        #a1{
+            text-decoration: none;
+            display: block;
+        }
+        #a2{
+            text-decoration: none;
+        }
+        ul :hover{
+            background-color: orange;
+            color: white;
+        }
+        #ul2 :hover{
+            background-color: gray;
+            color: white;
+        }
+        .container{
+            overflow: hidden;
+        }
+        a{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vertical Navigation Bar</h1>
+    <div class="container">
+        <div class="divison1">
+            <ul>
+                <li><a href="#" id="a1">Home</a></li>
+                <li><a href="#" id="a1">Java</a></li>
+                <li><a href="#" id="a1">CSS</a></li>
+                <li><a href="#" id="a1">HTML</a></li>
+                <li><a href="#" id="a1">Bootstrap</a></li>
+            </ul>
+        </div>
+        <h1>Horizontal Navigation Bar</h1>
+        <div class="division2">
+            <ul id="ul2">
+                <li id="li2"><a href="#" id="a2">Home</a></li>
+                <li id="li2"><a href="#" id="a2">Java</a></li>
+                <li id="li2"><a href="#" id="a2">CSS</a></li>
+                <li id="li2"><a href="#" id="a2">HTML</a></li>
+                <li id="li2"><a href="#" id="a2">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
