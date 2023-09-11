@@ -1,93 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML Task-4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
     <style>
-        body {
-            font-family: 'IMFePIrm28P';
-        }
-        h1 {
-            text-align: center;
-        }
         table {
-            margin: left;
-        }
-        table tr {
-            margin: 10px;
-        }
-        label {
-            text-align: right;
-            padding-right: 100px;
-        }
-        input[type="text"],
-        input[type="password"],
-        input[type="number"] {
-            width: 175px;
-            padding: 5px;
-        }
-        select {
-            width: 120px;
-            padding: 5px;
-        }
-        input[type="submit"] {
-            margin-top: 20px;
-        }
-        .gender-row {
-            margin: 0;
-            padding: 0.5px;
-        }
-        input[type="submit"] {
-            margin-top: 0.5px;
+            border: 1px solid rgb(253, 253, 253);
+            border-collapse: collapse;
+            width: 600px;
+            text-align: left;
         }
         
-        select {
-            width: 120px; 
+        th {
+            text-align: center;
+        }
+        
+        td {
+            padding: 5px;
         }
     </style>
 </head>
 <body>
-    <form>
-        <table>
-            <tr>
-                <td><label for="fullname">Full Name:</label></td>
-                <td><input type="text" id="fullName" name="fullName" required></td>
-            </tr>
-            <tr>
-                <td><label for="username">Username:</label></td>
-                <td><input type="text" id="username" name="username" required></td>
-            </tr>
-            <tr>
-                <td><label for="pw">Password:</label></td>
-                <td><input type="password" id="pw" name="pw" required></td>
-            </tr>
-            <tr>
-                <td><label for="repw">Re Password:</label></td>
-                <td><input type="password" id="rePassword" name="repw" required></td>
-            </tr>
-            <tr>
-                <td><label for="address">Address:</label></td>
-                <td><input type="text" id="address" name="address" required></td>
-            </tr>
-            <tr>
-                <td><label for="age">Age:</label></td>
-                <td><input type="number" id="age" name="age" required></td>
-            </tr>
-            <tr>
-                <td><label for="gender">Gender:</label></td>
-                <td>
-                    <select id="gender" name="gender" required>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Other">Others</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: left;">
-                    <div style="padding: 2px; width: 5px;">
-                        <input type="submit" value="Save">
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </form
+    <table border="1" style="background-color: rgb(112, 212, 215);">
+        <tr>
+            <th><strong>Firstname</strong></th>
+            <th><strong>Lastname</strong></th>
+            <th><strong>Age</strong></th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>
